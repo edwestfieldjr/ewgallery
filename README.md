@@ -2,8 +2,8 @@
 
 ## TODO
 
-- [ ] Make it deploy
-- [ ] Scaffold basic UI with mock data
+- [x] Make it deploy
+- [x] Scaffold basic UI with mock data
 - [ ] Actually set up a database (vercel postgres)
 - [ ] Attach database to UI
 - [ ] Add authentication (w/ clerk)
@@ -17,3 +17,5 @@
 ---
 
 Source: <https://youtu.be/d5x0JCZbAJs?si=OwBDgHsIajLXBwPL>
+
+PROGRESS (THU 2024-05-16 323:46 EDT): <https://youtu.be/d5x0JCZbAJs?si=rLfWaqmHJiFp20jp&t=910>
