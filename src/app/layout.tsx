@@ -1,10 +1,12 @@
 import "~/styles/globals.css";
 
 import { Inter } from "next/font/google";
-// import { GeistSans } from "geist/font/sans";
+import { GeistSans } from "geist/font/sans";
 
 const inter = Inter({
   subsets: ["latin"],
+  style: "normal",
+  weight: "900",
   variable: "--font-sans",
 });
 
@@ -17,7 +19,7 @@ export const metadata = {
 function TopNav() {
   return (
     <nav className="flex w-full items-center justify-between border-b p-4">
-      <div>G.A.L.L.E.R.Y.</div>
+      <div className={`${inter.variable} font-sans`}> G.A.L.L.E.R.Y.</div>
       <ul>
         <li>Sign-in</li>
       </ul>
@@ -32,7 +34,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`font-sans ${inter.variable} flex flex-col gap-4`}>
+      <body className={`${inter.variable} flex flex-col gap-4 font-sans`}>
         <TopNav />
         {children}
       </body>
