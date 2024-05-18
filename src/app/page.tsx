@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { db } from "../server/db";
 import { headers } from "next/headers";
-
+import { SignedIn, SignInButton, SignedOut } from "@clerk/nextjs";
 export const dynamic = "force-dynamic";
 
 // const mockUrls: string[] = [
@@ -30,14 +30,19 @@ export default async function HomePage() {
 
   return (
     <main className="center">
-      <div className="flex flex-wrap gap-4">
-        {images.map((image) => (
-          <div key={image.id} className="w-48">
-            <img src={image.url} alt={image.name} className="w-full" />
-            <div>{image.name}</div>
-          </div>
-        ))}
-      </div>
+      <SignedOut>
+        PLZ LGN: <SignInButton />
+      </SignedOut>
+      <SignedIn>
+        <div className="flex flex-wrap gap-4">
+          {images.map((image) => (
+            <div key={image.id} className="w-48">
+              <img src={image.url} alt={image.name} className="w-full" />
+              <div>{image.name}</div>
+            </div>
+          ))}
+        </div>
+      </SignedIn>
     </main>
   );
 }
