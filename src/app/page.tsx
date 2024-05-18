@@ -23,7 +23,7 @@ const mockImages: { id: number; url: string }[] = [
 
 export default async function HomePage() {
   headers();
-  const posts = await db.query.posts.findMany();
+  const posts = await db.query.images.findMany();
 
   console.log("BIG BOOGERS!");
   console.log(posts);
