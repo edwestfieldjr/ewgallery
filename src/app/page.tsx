@@ -24,7 +24,7 @@ export const dynamic = "force-dynamic";
 export default async function HomePage() {
   headers();
 
-  const images = await db.images.findMany();
+  const images = await db.query.images.findMany();
 
   return (
     <main className="center">
