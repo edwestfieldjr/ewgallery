@@ -19,4 +19,4 @@
 
 Source: <https://youtu.be/d5x0JCZbAJs?si=OwBDgHsIajLXBwPL>
 
-PROGRESS (THU 2024-05-16 323:46 EDT): <https://youtu.be/d5x0JCZbAJs?si=rLfWaqmHJiFp20jp&t=910>
+PROGRESS (SAT 2024-05-18 00:39 EDT): <https://youtu.be/d5x0JCZbAJs?si=ozCkXAOqxkm8OwPb&t=2114>
