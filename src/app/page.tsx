@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { db } from "../server/db";
+import { headers } from "next/headers";
 
 const mockUrls: string[] = [
   "https://utfs.io/f/382f6fd1-6a9b-4127-9f68-d0a33db37e34-208n3g.png",
@@ -19,6 +20,7 @@ const mockImages: { id: number; url: string }[] = [
 }));
 
 export default async function HomePage() {
+  headers();
   const posts = await db.query.posts.findMany();
 
   console.log("BIG BOOGERS!");
