@@ -6,7 +6,7 @@
 - [x] Scaffold basic UI with mock data
 - [x] Tidy-up build process
 - [x] Actually set up a database (vercel postgres)
-- [ ] Attach database to UI
+- [x] Attach database to UI
 - [ ] Add authentication (w/ clerk)
 - [ ] Add image upload
 - [ ] Error management (w/ Sentry)
@@ -19,4 +19,4 @@
 
 Source: <https://youtu.be/d5x0JCZbAJs?si=OwBDgHsIajLXBwPL>
 
-PROGRESS (SAT 2024-05-18 00:39 EDT): <https://youtu.be/d5x0JCZbAJs?si=ozCkXAOqxkm8OwPb&t=2114>
+PROGRESS (SAT 2024-05-18 00:39 EDT): <https://youtu.be/d5x0JCZbAJs?si=ozCkXAOqxkm8OwPb&t=2549>
