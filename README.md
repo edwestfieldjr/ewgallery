@@ -9,6 +9,8 @@
 - [x] Attach database to UI
 - [x] Add authentication (w/ clerk)
 - [ ] Add image upload
+- [ ] 'taint' (server-only)
+- [ ] Use Next/Image component
 - [ ] Error management (w/ Sentry)
 - [ ] Routing/image page (parralell routher)
 - [ ] Delete button (w/ Server Actions)
@@ -19,4 +21,4 @@
 
 Source: <https://youtu.be/d5x0JCZbAJs?si=OwBDgHsIajLXBwPL>
 
-PROGRESS (SAT 2024-05-18 00:39 EDT): <https://youtu.be/d5x0JCZbAJs?si=ozCkXAOqxkm8OwPb&t=2549>
+PROGRESS (SUN 2024-05-19 10:03 EDT): <https://youtu.be/d5x0JCZbAJs?si=ozCkXAOqxkm8OwPb&t=3313>
