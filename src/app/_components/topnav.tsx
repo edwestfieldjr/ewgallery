@@ -1,12 +1,23 @@
+"use client";
+
 import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+import { useRouter } from "next/navigation";
+import { UploadButton } from "~/utils/uploadthing";
 
 export function AuthSectionCustom() {
+  const router = useRouter();
   return (
     <div>
       <SignedOut>
         <SignInButton />
       </SignedOut>
       <SignedIn>
+        <UploadButton
+          endpoint="imageUploader"
+          onClientUploadComplete={() => {
+            router.refresh();
+          }}
+        />
         <UserButton />
       </SignedIn>
     </div>
