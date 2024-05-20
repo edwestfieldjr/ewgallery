@@ -11,7 +11,7 @@
 - [x] Add image upload
 - [x] 'taint' (server-only)
 - [x] Use Next/Image component
-- [ ] Error management (w/ Sentry)
+- [x] Error management (w/ Sentry)
 - [ ] Routing/image page (parralell routher)
 - [ ] Delete button (w/ Server Actions)
 - [ ] Analytics (posthog)
@@ -21,4 +21,4 @@
 
 Source: <https://youtu.be/d5x0JCZbAJs?si=OwBDgHsIajLXBwPL>
 
-PROGRESS (SUN 2024-05-19 10:03 EDT): <https://youtu.be/d5x0JCZbAJs?si=ozCkXAOqxkm8OwPb&t=3313>
+PROGRESS (MON 2024-05-20 01:22 EDT): <https://youtu.be/d5x0JCZbAJs?si=ozCkXAOqxkm8OwPb&t=6442>
