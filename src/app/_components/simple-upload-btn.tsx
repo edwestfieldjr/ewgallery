@@ -99,8 +99,6 @@ function makeUploadToast() {
   );
 }
 
-window.makeToast = makeUploadToast;
-
 export function SimpleUploadBtn() {
   const router = useRouter();
 
@@ -114,6 +112,7 @@ export function SimpleUploadBtn() {
         { duration: 60000, id: "upload-begin" },
       );
     },
+
     onClientUploadComplete() {
       toast.dismiss("upload-begin");
       toast(
