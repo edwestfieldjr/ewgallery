@@ -11,6 +11,9 @@ importers:
       '@clerk/nextjs':
         specifier: ^5.0.12
         version: 5.0.12(next@14.2.3(@babel/core@7.24.5)(@opentelemetry/api@1.8.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@clerk/themes':
+        specifier: ^2.1.6
+        version: 2.1.6
       '@sentry/nextjs':
         specifier: ^8
         version: 8.2.1(@opentelemetry/api@1.8.0)(@opentelemetry/core@1.24.1(@opentelemetry/api@1.8.0))(@opentelemetry/instrumentation@0.51.1(@opentelemetry/api@1.8.0))(@opentelemetry/sdk-trace-base@1.24.1(@opentelemetry/api@1.8.0))(@opentelemetry/semantic-conventions@1.24.1)(next@14.2.3(@babel/core@7.24.5)(@opentelemetry/api@1.8.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)(webpack@5.91.0(esbuild@0.19.12))
@@ -231,6 +234,10 @@ packages:
         optional: true
       react-dom:
         optional: true
+
+  '@clerk/themes@2.1.6':
+    resolution: {integrity: sha512-KEn0lOMzDOBvMeEYhOIp4oi7TjsY0mZz31COFcc6mSEguGU2KM700ZTNgZ8nbtQEtJVytXG+ajQ7jstPuzMDYA==}
+    engines: {node: '>=18.17.0'}
 
   '@clerk/types@4.4.0':
     resolution: {integrity: sha512-OaT02uLG1P/jBFNyoPM3n9nLdV4H0etTpa/l3iTW4IgOLiAINToLpMOvEpWzKWUq9nvmOouZlBzPVMozu7dwDg==}
@@ -3493,6 +3500,11 @@ snapshots:
     optionalDependencies:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
+
+  '@clerk/themes@2.1.6':
+    dependencies:
+      '@clerk/types': 4.4.0
+      tslib: 2.4.1
 
   '@clerk/types@4.4.0':
     dependencies:

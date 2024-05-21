@@ -1,5 +1,6 @@
 import "~/styles/globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
+import { dark } from "@clerk/themes";
 import { NextSSRPlugin } from "@uploadthing/react/next-ssr-plugin";
 import { extractRouterConfig } from "uploadthing/server";
 
@@ -32,7 +33,11 @@ export default function RootLayout({
   modal: React.ReactNode;
 }) {
   return (
-    <ClerkProvider>
+    <ClerkProvider
+      appearance={{
+        baseTheme: dark,
+      }}
+    >
       <html lang="en">
         <NextSSRPlugin routerConfig={extractRouterConfig(ourFileRouter)} />
         <body className={`${inter.variable} gap-4 font-sans`}>
