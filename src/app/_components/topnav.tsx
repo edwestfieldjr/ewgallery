@@ -9,7 +9,7 @@ import Link from "next/link"; //import this
 
 function CustomSignInButton() {
   return (
-    <button>
+    <button title="Sign In">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
