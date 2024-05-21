@@ -8,7 +8,7 @@ import Link from "next/link"; //import this
 export function AuthSectionCustom() {
   const router = useRouter();
   return (
-    <div>
+    <div className="flex">
       <SignedOut>
         <SignInButton />
       </SignedOut>
