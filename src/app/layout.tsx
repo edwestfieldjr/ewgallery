@@ -3,9 +3,10 @@ import { ClerkProvider } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
 import { NextSSRPlugin } from "@uploadthing/react/next-ssr-plugin";
 import { extractRouterConfig } from "uploadthing/server";
+import { Toaster } from "~/components/ui/sonner";
 
 import { Inter } from "next/font/google";
-import { GeistSans } from "geist/font/sans";
+// import { GeistSans } from "geist/font/sans";
 
 import { TopNav } from "~/app/_components/topnav";
 import { ourFileRouter } from "./api/uploadthing/core";
@@ -40,13 +41,14 @@ export default function RootLayout({
     >
       <html lang="en">
         <NextSSRPlugin routerConfig={extractRouterConfig(ourFileRouter)} />
-        <body className={`${inter.variable} gap-4 font-sans`}>
+        <body className={`${inter.variable} dark gap-4 font-sans`}>
           <div className="grid h-screen grid-rows-[auto,1fr]">
             <TopNav />
             <main className="overflow-y-scroll">{children}</main>
           </div>
           {modal}
           <div id="modal-root" />
+          <Toaster />
         </body>
       </html>
     </ClerkProvider>
