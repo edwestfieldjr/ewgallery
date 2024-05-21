@@ -14,13 +14,13 @@
 - [x] Error management (w/ Sentry)
 - [x] Routing/image page (parralell routher)
 - [x] Update/redesign Upload and Signin Button
-- [ ] ShadUI (toasts)
-- [ ] Delete button (w/ Server Actions)
+- [x] ShadUI (toasts)
 - [ ] Analytics (posthog)
+- [ ] Delete button (w/ Server Actions)
 - [ ] Ratelimiting (upstash)
 
 ---
 
 Source: <https://youtu.be/d5x0JCZbAJs?si=OwBDgHsIajLXBwPL>
 
-PROGRESS (MON 2024-05-20 01:22 EDT): <https://youtu.be/d5x0JCZbAJs?si=ozCkXAOqxkm8OwPb&t=6442>
+PROGRESS (MON 2024-05-20 01:22 EDT): <https://youtu.be/d5x0JCZbAJs?si=ozCkXAOqxkm8OwPb&t=8888>

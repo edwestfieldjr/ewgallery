@@ -80,12 +80,7 @@ dialog:modal {
   max-height: 100vh;
 }
 
-svg {
-  fill: hsl(var(--foreground));
-}
-
 .spinner_ajPY {
-  fill: hsl(var(--foreground));
   transform-origin: center;
   animation: spinner_AtaB 0.75s infinite linear;
 }
