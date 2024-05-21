@@ -3,6 +3,7 @@
 import { useUploadThing } from "~/utils/uploadthing";
 import { useRouter } from "next/navigation";
 import { toast } from "sonner";
+import { useEffect } from "react";
 
 // inferred input off useUploadThing
 type Input = Parameters<typeof useUploadThing>;
@@ -69,27 +70,38 @@ const LoadingSpinnerSVG = () => {
   );
 };
 
+function makeUploadToast() {
+  return toast(
+    <div className="flex flex-row gap-2">
+      <LoadingSpinnerSVG />
+      Uploading...
+    </div>,
+    { duration: 60000, id: "upload-begin" },
+  );
+}
+
+window.makeToast = makeUploadToast;
+
 export function SimpleUploadBtn() {
   const router = useRouter();
+
+  useEffect(() => {
+    makeUploadToast();
+  }, []);
 
   const { inputProps } = useUploadThingInputProps("imageUploader", {
     onUploadBegin() {
       toast(
-        <div className="flex flex-row items-center gap-2">
+        <div>
           <LoadingSpinnerSVG />
-          <span className="text-lg">Uploading...</span>
+          Uploading...
         </div>,
         { duration: 60000, id: "upload-begin" },
       );
     },
     onClientUploadComplete() {
       toast.dismiss("upload-begin");
-      toast(
-        <div className="flex flex-row items-center gap-2">
-          <span className="text-lg">Upload Complete!</span>
-        </div>,
-        { id: "upload-complete" },
-      );
+      makeUploadToast();
       router.refresh();
     },
   });
