@@ -1,8 +1,18 @@
 import { getImage } from "~/server/queries";
 import { clerkClient } from "@clerk/nextjs/server";
+// import { useRouter } from "next/navigation";
+//
+import { Button } from "~/components/ui/button";
+
+export function ButtonDestructive() {
+  return <Button variant="destructive">Destructive</Button>;
+}
+
 export default async function FullPageImageView(props: { id: number }) {
   const image = await getImage(props.id);
   const uploaderInfo = await clerkClient.users.getUser(image.userId);
+  // const router = useRouter();
+
   return (
     <div className="flex h-full w-screen">
       <div className="flex flex-shrink items-center justify-center">
@@ -27,6 +37,17 @@ export default async function FullPageImageView(props: { id: number }) {
           <span className="font-bold text-yellow-600">
             {new Date(image.createdAt).toLocaleDateString()}
           </span>
+        </div>
+        <div className="flex justify-center p-2">
+          <form
+            action={() => {
+              "use server";
+            }}
+          >
+            <Button variant="destructive" type="submit">
+              Delete
+            </Button>
+          </form>
         </div>
       </div>
     </div>

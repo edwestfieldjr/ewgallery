@@ -23,4 +23,4 @@
 
 Source: <https://youtu.be/d5x0JCZbAJs?si=OwBDgHsIajLXBwPL>
 
-PROGRESS (MON 2024-05-20 01:22 EDT): <https://youtu.be/d5x0JCZbAJs?si=ozCkXAOqxkm8OwPb&t=8888>
+PROGRESS (WED 2024-05-22 01:54 EDT): <https://www.youtube.com/watch?v=d5x0JCZbAJs&t=9501s>
