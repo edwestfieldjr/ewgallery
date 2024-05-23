@@ -32,4 +32,4 @@ A code-along clone of Theo Browne's [t3gallery](https://github.com/t3dotgg/t3gal
 
 ## Viewer-added features
 
-- [x] Delete button server action include deletion from [UploadThing](https://uploadthing.com/)
+- [x] Delete button server action to include deletion from [UploadThing](https://uploadthing.com/)
