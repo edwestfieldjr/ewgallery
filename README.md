@@ -1,4 +1,6 @@
-# T3
+# ewgallery
+
+A code-along clone of Theo Browne's [t3gallery](https://github.com/t3dotgg/t3gallery) from the from Theo's [T3 App Router Tutorial on YouTube](https://youtu.be/d5x0JCZbAJs?si=OwBDgHsIajLXBwPL)
 
 ## TODO
 
@@ -17,10 +19,17 @@
 - [x] ShadUI (toasts)
 - [x] Analytics (posthog)
 - [x] Delete button (w/ Server Actions)
-- [ ] Ratelimiting (upstash)
+- [x] Ratelimiting (upstash)
 
 ---
 
-Source: <https://youtu.be/d5x0JCZbAJs?si=OwBDgHsIajLXBwPL>
+## A challenge to the viewer
 
-PROGRESS (THU 2024-05-23 01:37 EDT): <https://www.youtube.com/watch?v=d5x0JCZbAJs&t=10192s>
+- [ ] Fix the page layout for images of different resolutions
+- [ ] "Selecting" images on the gallery page
+- [ ] "infinite scroll"]
+- [ ] Folders/albums
+
+## Viewer-added features
+
+- [x] Delete button server action include deletion from [UploadThing](https://uploadthing.com/)
