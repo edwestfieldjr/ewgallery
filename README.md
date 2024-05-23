@@ -15,12 +15,12 @@
 - [x] Routing/image page (parralell routher)
 - [x] Update/redesign Upload and Signin Button
 - [x] ShadUI (toasts)
-- [ ] Analytics (posthog)
-- [ ] Delete button (w/ Server Actions)
+- [x] Analytics (posthog)
+- [x] Delete button (w/ Server Actions)
 - [ ] Ratelimiting (upstash)
 
 ---
 
 Source: <https://youtu.be/d5x0JCZbAJs?si=OwBDgHsIajLXBwPL>
 
-PROGRESS (WED 2024-05-22 01:54 EDT): <https://www.youtube.com/watch?v=d5x0JCZbAJs&t=9501s>
+PROGRESS (THU 2024-05-23 01:37 EDT): <https://www.youtube.com/watch?v=d5x0JCZbAJs&t=10192s>
