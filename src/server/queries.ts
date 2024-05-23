@@ -52,9 +52,10 @@ export async function deleteImage(id: number) {
   const utapi = new UTApi();
   const delImage = await getImage(id);
   if (!delImage) throw new Error("Image not found");
-  const fileKey = delImage.url.split("/").pop();
+  const fileKey: string | undefined = delImage.url.split("/").pop();
   console.log(fileKey);
-  await utapi.deleteFiles(fileKey);
+  if (!fileKey) throw new Error("File key not found");
+  await utapi.deleteFiles([fileKey]);
 
   // delete image from database
   await db
