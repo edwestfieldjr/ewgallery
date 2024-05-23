@@ -1,7 +1,9 @@
 import "server-only";
 import { db } from "./db";
+import { images } from "./db/schema";
 import { auth } from "@clerk/nextjs/server";
 import { and, eq } from "drizzle-orm";
+import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 
 export async function getMyImages() {
@@ -52,5 +54,5 @@ export async function deleteImage(id: number) {
     .delete(images)
     .where(and(eq(images.id, id), eq(images.userId, user.userId)));
 
-  return;
+  redirect("/");
 }

@@ -1,4 +1,4 @@
-import { getImage } from "~/server/queries";
+import { getImage, deleteImage } from "~/server/queries";
 import { clerkClient } from "@clerk/nextjs/server";
 // import { useRouter } from "next/navigation";
 //
@@ -26,7 +26,7 @@ export default async function FullPageImageView(props: { id: number }) {
         <div className="w-full border-b p-2 text-center text-lg">
           {image.name}
         </div>
-        <div className="flex min-w-64 flex-col p-2 text-center text-sm">
+        <div className="mi/n-w-64 flex flex-col p-2 text-center text-sm">
           Uploaded By
           <span className="font-bold text-yellow-600">
             {uploaderInfo.fullName}
@@ -40,8 +40,9 @@ export default async function FullPageImageView(props: { id: number }) {
         </div>
         <div className="flex justify-center p-2">
           <form
-            action={() => {
+            action={async () => {
               "use server";
+              await deleteImage(props.id);
             }}
           >
             <Button variant="destructive" type="submit">
