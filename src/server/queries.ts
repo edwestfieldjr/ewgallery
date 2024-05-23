@@ -4,6 +4,7 @@ import { images } from "./db/schema";
 import { auth } from "@clerk/nextjs/server";
 import { and, eq } from "drizzle-orm";
 import { redirect } from "next/navigation";
+import { UTApi } from "uploadthing/server";
 import analyticsServerClient from "./analytics";
 
 export async function getMyImages() {
@@ -47,6 +48,15 @@ export async function deleteImage(id: number) {
   const user = auth();
   if (!user.userId) throw new Error("Unauthorized");
 
+  // delete image from uploadthing
+  const utapi = new UTApi();
+  const delImage = await getImage(id);
+  if (!delImage) throw new Error("Image not found");
+  const fileKey = delImage.url.split("/").pop();
+  console.log(fileKey);
+  await utapi.deleteFiles(fileKey);
+
+  // delete image from database
   await db
     .delete(images)
     .where(and(eq(images.id, id), eq(images.userId, user.userId)));
