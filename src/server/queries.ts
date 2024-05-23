@@ -53,7 +53,6 @@ export async function deleteImage(id: number) {
   const delImage = await getImage(id);
   if (!delImage) throw new Error("Image not found");
   const fileKey: string | undefined = delImage.url.split("/").pop();
-  console.log(fileKey);
   if (!fileKey) throw new Error("File key not found");
   await utapi.deleteFiles([fileKey]);
 
@@ -67,6 +66,7 @@ export async function deleteImage(id: number) {
     event: "delete image",
     properties: {
       imageId: id,
+      uploadThingFileKey: fileKey,
     },
   });
 

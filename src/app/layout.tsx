@@ -3,7 +3,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
 import { NextSSRPlugin } from "@uploadthing/react/next-ssr-plugin";
 import { extractRouterConfig } from "uploadthing/server";
-import { Toaster } from "~/components/ui/sonner";
+import { Toaster } from "~/components/ui/toast/sonner";
 import { Inter } from "next/font/google";
 import { TopNav } from "~/app/_components/topnav";
 import { ourFileRouter } from "./api/uploadthing/core";
